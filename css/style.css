@@ -237,7 +237,7 @@ nav .menubot i{
 .trailer{
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #titulo-trailer{
