@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+body h1,h2,h3{
+    font-family: 'Inter', sans-serif;
+}
+
+header nav a{
+    font-family: 'Merriweather', serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo{
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #233b41;
+    height: 13vh;
+
+}
+
+
+.list{
+   list-style: none;
+   display: flex;
+}
+
+.list li a{
+    padding: 8px 15px;
+    letter-spacing: 3px;
+    margin:10px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+nav ul li a:hover{
+    background: rgb(136, 134, 31);
+    padding: 15px;
+}
+
+nav .menubot i{
+    color:#FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+/* ----Sub-lista-----*/
+
+.dropdown-menu{
+    display: none;
+}
+
+.dropdown-menu a{
+    display: block;
+    text-align: center;
+    
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    background-color: #141819a8;
+    border-radius: 10px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+
+.dropdown li{
+    list-style: none;
+    border: 3px;
+    border-color: black;
+    
+}
+
+.dropdown li a{
+    margin: 0; 
+}
+
+/*==============Menu Responsivo===================*/
+
+@media (max-width: 920px){
+    nav .menubot i{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        top:80px;
+        left: -100%;
+        background-color:rgb(25, 25, 20);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease;
+    }
+
+    nav ul.open{
+        left: 0;
+    }
+
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+        
+
+    }
+    nav ul li a{
+        font-size: 23px;
+    }
+    
+    
+    nav ul li a:hover{
+        background:rgb(136, 134, 31);
+        color:#FFFFFF;
+    }  
+}
+
+
+/*-----Pagina Home-----*/
+
+
+ h1,h2, p {
+    color: white;
+}
+
+ p{
+    font-size: 18px;
+}
+
+.home h1{
+    text-align: center;
+    margin: 15px;
+}
+
+.texto-principal{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+}
+
+.texto-principal p{
+    font-family: 'Merriweather', serif;
+}
+
+/*====================Home conheça mais============*/
+
+.paginas2{
+    background-color: #12191b;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    
+}
+
+.linkspag {
+  
+    display: flex;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.linkspag h2,p{
+    margin: 12px;
+}
+
+.linkspag div{
+    margin: 10px;
+}
+
+.colossus{
+    text-align: center;
+}
+
+.personagen{
+    text-align: center;
+}
+
+.armas{
+    text-align: center;
+}
+
+.linkspag button{
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #171D9B;
+    color: #FFFFFF;
+    
+}
+
+.linkspag button{
+    transition-duration: 0.4s;
+  }
+
+.linkspag button:hover{
+    
+    background-color: #04AA6D; 
+  color: white;
+}
+
+
+/*====================Home-Video============*/
+
+.trailer{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#titulo-trailer{
+    padding-bottom:15px;
+}
+
+/*====================Footer============*/
+
+
+
+.rodape{
+    background-color: #141819;
+}
+
+.rodape div{
+    text-align: center;
+    padding: 10px;
+}
+
+.logorodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redessociaisrodape img{
+    margin: 10px;
+}
+
+/*====================Pagina Contato============*/
+
+#titulo-contato{
+    padding: 15px;
+    margin: 10px;
+}
+
+.formulario label{
+    color: white;
+    font-size: 18px;
+}
+
+.formulario input{
+    font-size: 20px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form1 form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form1 form input,textarea{
+    margin-bottom: 15px;
+}
+
+.form1 .btn{
+    padding: 10px 10px;
+    border-radius: 5px;
+    
+    background-color: #171D9B;
+    color: #FFFFFF;
+    
+}
+
+.form1 .btn{
+    transition-duration: 0.4s;
+  }
+
+.form1 .btn:hover{
+    
+    background-color: #04AA6D; 
+  color: white;
+}
+
+
+/*====================Pagina Colossos============*/
+.tudo{
+    background-image: url(../images/paisagem.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    padding-bottom: 10px;
+}
+
+.imagempri-colossus{
+    text-align: center;
+}
+
+.colossustodos{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 588px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.colossustodos div{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+/*==============Pagina Personagens=========*/
+
+.personagens-global{
+    background-image: url(../images/paisagem.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    padding-bottom: 10px;
+}
+
+
+
+.personagens-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 588px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+   
+}
+
+.personagens-container div{
+    text-align: center;
+    padding: 10px;
+}
+
+
+/*==============Responsividade================*/
+
+@media (max-width: 400px){
+
+
+
+
+}
